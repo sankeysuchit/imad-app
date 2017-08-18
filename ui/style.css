@@ -1,3 +1,9 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+
 body {
     font-family: sans-serif;
     background-color: lightgrey;
@@ -19,9 +25,3 @@ body {
 .img-medium {
     height: 0px;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-} 
