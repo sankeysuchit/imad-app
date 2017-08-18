@@ -12,12 +12,19 @@
         </font>
         
 <style>
+body {
+    margin: 0;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 25%;
     background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
 li a {
@@ -27,8 +34,12 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color on hover */
-li a:hover {
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
@@ -36,12 +47,13 @@ li a:hover {
 
 
 <ul>
-  <li><a href="#home">Home</a></li>
+  <li><a class="active" href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
- 
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
         
         <img src="https://s.aolcdn.com/commerce/autodata/images/USC30FRC151A021001.jpg" height="260" width="450" align="right"
         hspace="10" vspace="10">
